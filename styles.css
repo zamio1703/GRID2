@@ -11,7 +11,8 @@ body{
     /* grid-template-rows: repeat(4, 1fr); */
     grid-template-rows: 12% 8% 70% 10%;
 
-
+    
+    
     width: 75%;
     height: 800px;
     margin: 0px auto;
@@ -19,6 +20,8 @@ body{
 }
 
 #cabecera{
+    /* CENTRAR ELEMENTO EN LA CAJA */
+    align-self: center;
     grid-column: 1 / 6;
     
     background: black;
@@ -27,6 +30,7 @@ body{
 
 #menu{
     grid-column: 1 / 6;
+    
     background: rgb(71, 71, 71);
     color: white;
 }
