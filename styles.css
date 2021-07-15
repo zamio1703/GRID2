@@ -45,7 +45,7 @@ body{
     font-size: 20px;
 }
 #contenido{
-    grid-column: 1 / 5;
+    grid-column: 2 / 6;
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
     grid-gap: 25px;
@@ -67,4 +67,5 @@ body{
     grid-column: 1 / 6;
     background: rgb(82, 82, 255);
     color: white;
+    padding: 38px;
 }
