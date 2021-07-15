@@ -19,7 +19,10 @@
 #header{
     /*GRID */
     display: grid;
-    grid-template-columns: 1fr 30%;
+    /* grid-template-columns: 1fr 30%; */
+    grid-template-columns: 68% 30%;
+    /* CENTRAR CONTRENIDO */
+    align-items: center;
 
     width: 100%;
     height: 120px;
@@ -43,6 +46,13 @@
     padding-right: 20px;
 }
 #menu > ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    /* CENTRAR TEXTTO */
+    justify-content: center;
+    text-align: center;
+
     height: 100%;
     list-style: none;
 }
@@ -59,12 +69,22 @@
 }
 
 #content{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: center;
+    justify-items: space-between;
+    
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 1px solid rgb(230, 230, 230);
+    /* grid-column-gap: ; */
 }
 #projects{
-
+    display: grid;
+    /* Ajustar cumlas automaticas -> auto-fill */
+    grid-template-columns: repeat(auto-fill, 250px);
+    /* Separacion entre elementos */
+    grid-gap: 35px;
 }
 .project{
     margin-bottom: 25px;
@@ -130,6 +150,11 @@ aside a:hover{
 }
 
 #footer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    justify-content: start;
+
     height: 110px;
     align-items: center;
     border-top: 1px solid rgb(230, 230, 230);
