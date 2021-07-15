@@ -78,6 +78,7 @@
     padding-bottom: 20px;
     border-top: 1px solid rgb(230, 230, 230);
     /* grid-column-gap: ; */
+    align-items: start;
 }
 #projects{
     display: grid;
@@ -109,12 +110,9 @@
 }
 
 aside{
-
     margin-right: 30px;
     padding: 15px;
-
 }
-
 
 aside h2{
     display: block;
@@ -169,4 +167,70 @@ aside a:hover{
 #footer .info{
     margin-left: 20px;
     color: #444;
+}
+
+/* RESPONSIVE */
+@media (max-width:1180px){
+    #header{
+        display: grid;
+        grid-template-columns: 65% 30%;
+    }
+}
+@media (max-width:995px){
+    #header{
+        /*GRID */
+        display: grid;
+        /* grid-template-columns: 1fr 30%; */
+        grid-template-columns: 100%;
+        /* CENTRAR CONTRENIDO */
+        align-items: center;
+        text-align: center;
+        border-bottom: 40px;
+        /* height: 140px;    */
+        padding-bottom: 20px;
+    }
+    #content{
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+        justify-items: space-between;
+        grid-column-gap: auto;
+        
+    }
+    #projects{
+        display: grid;
+        /* Ajustar cumlas automaticas -> auto-fill */
+        grid-template-columns: 1fr;
+        /* Separacion entre elementos */
+        grid-gap: 20px;
+    }
+    .project{
+        margin-right: 10px;
+        margin-left: 10px;
+
+    }
+    aside{
+        margin-right: 0px;
+        padding: 15px;
+    }
+    
+    
+}
+@media (max-width:700px){
+    aside ul{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+    }
+    #footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: start;
+        text-align: center !important;
+    }
+    #footer .logo{
+        text-align: center;
+    }
+    
 }
